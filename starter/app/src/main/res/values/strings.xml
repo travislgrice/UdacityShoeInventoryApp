@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email:</string>
+    <string name="password">Password:</string>
+    <string name="log_in">Log In</string>
+    <string name="create_new_login">Create</string>
+    <string name="login_help">Tap \"CREATE\" to register a new email address and password.</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="continue_from_last">Continue where you left off or tap help for instructions.</string>
+    <string name="help">Help</string>
+    <string name="login_help_instructions">If you have logged in previously, you may do so again by entering your email and address from the previous session.</string>
+    <string name="create_help_instructions">If you have never logged in before, enter your email address and a password to create a new set of login credentials.</string>
+    <string name="take_me_to_my_shoes">Take me to my shoes!</string>
+</resources>
