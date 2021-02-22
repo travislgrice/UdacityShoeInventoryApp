@@ -8,9 +8,16 @@
     <string name="create_new_login">Create</string>
     <string name="login_help">Tap \"CREATE\" to register a new email address and password.</string>
     <string name="welcome_back">Welcome Back!</string>
-    <string name="continue_from_last">Continue where you left off or tap help for instructions.</string>
-    <string name="help">Help</string>
+    <string name="continue_from_last">Tap Continue to resume your inventory.</string>
+    <string name="continue_to">Continue</string>
     <string name="login_help_instructions">If you have logged in previously, you may do so again by entering your email and address from the previous session.</string>
     <string name="create_help_instructions">If you have never logged in before, enter your email address and a password to create a new set of login credentials.</string>
     <string name="take_me_to_my_shoes">Take me to my shoes!</string>
+    <string name="log_out">Log Out</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="company">Company</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="description">Description</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
 </resources>
