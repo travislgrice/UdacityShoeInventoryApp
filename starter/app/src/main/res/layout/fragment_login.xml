@@ -4,49 +4,31 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/background"
-        android:orientation="vertical"
+        style="@style/layout_style"
         android:outlineProvider="none"
-        android:padding="@dimen/inside_margin"
         tools:context=".LoginFragment">
 
+        <!-- Will all of the layouts, I decided to use Linear Layouts
+             to layout the views because they are simpler to use and I
+             wanted to stack the views (for the most part) on top of
+             one another. I realize that I might have used a ConstraintLayout
+             for some of the views to accommodate screens of different sizes,
+             types and for times when a device is rotated but the goal of
+             this project was to support views on a Pixel 3. -->
         <TextView
             android:id="@+id/emailLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/side_margins"
-            android:layout_marginTop="@dimen/side_margins"
-            android:layout_marginEnd="@dimen/side_margins"
-            android:fontFamily="cursive"
-            android:text="@string/email"
-            android:textSize="18sp" />
+            style="@style/TextViewStyle"
+            android:text="@string/email" />
 
         <EditText
             android:id="@+id/editTextEmailAddress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/side_margins"
-            android:layout_marginEnd="@dimen/side_margins"
-            android:layout_marginBottom="@dimen/inside_margin"
-            android:backgroundTint="@color/text_tint"
-            android:cursorVisible="true"
-            android:ems="10"
-            android:hint="user@youremail.com"
-            android:inputType="textEmailAddress"
-            android:textColorHint="@color/hint_color" />
+            style="@style/EditTextStyle"
+            android:hint="user@youremail.com" />
 
         <TextView
             android:id="@+id/passwordLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/side_margins"
-            android:layout_marginTop="@dimen/inside_margin"
-            android:layout_marginEnd="@dimen/side_margins"
-            android:fontFamily="cursive"
-            android:text="@string/password"
-            android:textSize="18sp" />
+            style="@style/TextViewStyle"
+            android:text="@string/password" />
 
         <EditText
             android:id="@+id/editTextTextPassword"
@@ -62,40 +44,20 @@
             android:singleLine="false"
             android:textColorHint="@color/hint_color" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/inside_margin"
-            android:layout_marginBottom="@dimen/inside_margin"
-            android:orientation="horizontal">
+        <LinearLayout style="@style/horizontal_layout_style">
 
             <Button
                 android:id="@+id/loginButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/side_margins"
-                android:layout_marginTop="@dimen/inside_margin"
-                android:layout_marginEnd="@dimen/inside_margin"
+                style="@style/ButtonStyle"
                 android:layout_weight="1"
-                android:fontFamily="cursive"
-                android:text="@string/log_in"
-                android:textColor="@color/font_color"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:text="@string/log_in" />
 
             <Button
                 android:id="@+id/createButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/inside_margin"
-                android:layout_marginTop="@dimen/inside_margin"
-                android:layout_marginEnd="@dimen/side_margins"
+                style="@style/ButtonStyle"
                 android:layout_weight="1"
-                android:fontFamily="cursive"
-                android:text="@string/create_new_login"
-                android:textColor="@color/font_color"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:text="@string/create_new_login" />
+
         </LinearLayout>
 
     </LinearLayout>

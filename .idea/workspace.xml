@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6f5197c-38cd-4418-8723-c383207bfff0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/starter/app/src/main/res/menu/logout_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/starter/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starter/app/src/main/java/com/udacity/shoestore/DetailFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/starter/app/src/main/java/com/udacity/shoestore/DetailFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/app/src/main/java/com/udacity/shoestore/InstructionFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/starter/app/src/main/java/com/udacity/shoestore/InstructionFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starter/app/src/main/java/com/udacity/shoestore/ListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/starter/app/src/main/java/com/udacity/shoestore/ListFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/app/src/main/java/com/udacity/shoestore/LoginFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/starter/app/src/main/java/com/udacity/shoestore/LoginFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/app/src/main/java/com/udacity/shoestore/ListingViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/starter/app/src/main/java/com/udacity/shoestore/ListingViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starter/app/src/main/java/com/udacity/shoestore/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/starter/app/src/main/java/com/udacity/shoestore/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/app/src/main/java/com/udacity/shoestore/WelcomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/starter/app/src/main/java/com/udacity/shoestore/WelcomeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/starter/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starter/app/src/main/res/layout/fragment_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/starter/app/src/main/res/layout/fragment_detail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/app/src/main/res/layout/fragment_instruction.xml" beforeDir="false" afterPath="$PROJECT_DIR$/starter/app/src/main/res/layout/fragment_instruction.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/app/src/main/res/layout/fragment_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/starter/app/src/main/res/layout/fragment_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/app/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/starter/app/src/main/res/layout/fragment_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/app/src/main/res/layout/fragment_welcome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/starter/app/src/main/res/layout/fragment_welcome.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/app/src/main/res/layout/textview.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/starter/app/src/main/res/navigation/navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/starter/app/src/main/res/navigation/navigation.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starter/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/starter/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
@@ -50,9 +44,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1220" y="294" key="FileChooserDialogImpl" timestamp="1613958213699">
+    <state x="1220" y="294" key="FileChooserDialogImpl" timestamp="1614300784476">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1220" y="294" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1613958213699" />
+    <state x="1220" y="294" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1614300784476" />
   </component>
 </project>

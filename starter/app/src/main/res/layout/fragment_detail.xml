@@ -2,67 +2,79 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+
+        <variable
+            name="listingViewModel"
+            type="com.udacity.shoestore.ListingViewModel" />
+
+        <variable
+            name="shoeName"
+            type="String" />
+
+        <variable
+            name="companyName"
+            type="String" />
+
+        <variable
+            name="shoeSize"
+            type="String" />
+
+        <variable
+            name="description"
+            type="String" />
+    </data>
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        style="@style/layout_style"
         tools:context=".DetailFragment">
 
         <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/TextViewStyle"
             android:text="@string/shoe_name" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:id="@+id/shoeNameEditText"
+            style="@style/EditTextStyle"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="@={shoeName}" />
 
         <TextView
-            android:id="@+id/companyLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/companyTextView"
+            style="@style/TextViewStyle"
             android:text="@string/company" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:id="@+id/companyEditText"
+            style="@style/EditTextStyle"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="@={companyName}" />
 
         <TextView
-            android:id="@+id/shoeSizeLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/shoeSizeTextView"
+            style="@style/TextViewStyle"
             android:text="@string/shoe_size" />
 
         <EditText
-            android:id="@+id/editTextNumberDecimal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:id="@+id/shoeSizeEditText"
+            style="@style/EditTextStyle"
             android:ems="10"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:text="@={shoeSize}" />
 
         <TextView
-            android:id="@+id/descriptionLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/descriptionTextView"
+            style="@style/TextViewStyle"
             android:text="@string/description" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:id="@+id/descriptionEditText"
+            style="@style/EditTextStyle"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="@={description}" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -71,18 +83,17 @@
 
             <Button
                 android:id="@+id/saveButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
                 android:layout_weight="1"
+                android:onClick="@{() -> listingViewModel.saveShoe(shoeName, companyName, shoeSize, description)}"
                 android:text="@string/save" />
 
             <Button
                 android:id="@+id/cancelButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
                 android:layout_weight="1"
                 android:text="@string/cancel" />
-        </LinearLayout>
 
+        </LinearLayout>
     </LinearLayout>
 </layout>

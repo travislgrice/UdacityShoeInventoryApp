@@ -1,24 +1,20 @@
 package com.udacity.shoestore
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.udacity.shoestore.models.Shoe
+
+data class Shoe(val name: String, val company: String, val size: String, val description: String)
 
 class ListingViewModel: ViewModel() {
-    private var _listOfShoes = MutableLiveData<Shoe>()
 
-    var name = MutableLiveData<String>()
-    var company = MutableLiveData<String>()
-    var size = MutableLiveData<String>()
-    var description = MutableLiveData<String>()
-    var onUpdate = MutableLiveData<Boolean>()
+    private val _shoeList = MutableLiveData<MutableList<Shoe>>(mutableListOf())
+    val shoeList : LiveData<MutableList<Shoe>>
+        get() = _shoeList
 
-    // called from the ListFragment after the UI is updated
-    fun afterUIUpdate() {
-        Log.i("afterUIUpdate", "Save button was pressed!")
-        onUpdate.value = true
+    fun saveShoe(name: String?, company: String?, size: String?, description: String?) {
+        _shoeList.value?.add(Shoe(name ?: "", company ?: "", size ?: "", description ?: "")
+        )
     }
 
 }

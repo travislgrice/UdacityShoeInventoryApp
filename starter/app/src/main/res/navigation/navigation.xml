@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.udacity.shoestore.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
+        android:label="@string/loginFragmentLabel"
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_welcomeFragment"
             app:destination="@id/welcomeFragment" />
@@ -17,8 +17,8 @@
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.udacity.shoestore.WelcomeFragment"
-        android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" >
+        android:label="@string/welcomeFragmentLabel"
+        tools:layout="@layout/fragment_welcome">
         <action
             android:id="@+id/action_welcomeFragment_to_instructionFragment"
             app:destination="@id/instructionFragment" />
@@ -26,17 +26,16 @@
     <fragment
         android:id="@+id/instructionFragment"
         android:name="com.udacity.shoestore.InstructionFragment"
-        android:label="InstructionFragment" >
+        android:label="@string/instructionFragmentLabel">
         <action
             android:id="@+id/action_instructionFragment_to_listFragment"
             app:destination="@id/listFragment"
-            app:popUpTo="@id/loginFragment"
             app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/listFragment"
         android:name="com.udacity.shoestore.ListFragment"
-        android:label="ListFragment" >
+        android:label="@string/list_fragment_label">
         <action
             android:id="@+id/action_listFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
@@ -44,10 +43,6 @@
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.udacity.shoestore.DetailFragment"
-        android:label="DetailFragment" >
-        <action
-            android:id="@+id/action_detailFragment_to_listFragment"
-            app:destination="@id/listFragment" />
-    </fragment>
+        android:label="@string/detailFragmentLabel" />
 
 </navigation>

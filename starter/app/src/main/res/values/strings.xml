@@ -20,4 +20,14 @@
     <string name="description">Description</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
+    <string name="_" />
+    <string name="comp">Company:</string>
+    <string name="welcome_text">Welcome back to your Shoe Closet - the app that helps you keep track of your shoes!</string>
+    <string name="tap_the_button">Tap the button below to go to your shoes.</string>
+    <string name="detailFragmentLabel">Shoe Details</string>
+    <string name="list_fragment_label">Shoe List</string>
+    <string name="instructionFragmentLabel">Instructions</string>
+    <string name="welcomeFragmentLabel">Welcome</string>
+    <string name="loginFragmentLabel">Log In</string>
+    <string name="empty_string">\"\"</string>
 </resources>
